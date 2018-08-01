@@ -1,0 +1,9 @@
+%article.detail-article
+
+  %h1.article-detail-title=@article.title
+
+  .glyphicon.glyphicon-calendar#article-date
+    =@article.created_at.strftime("%b %d %Y")
+
+  .article-body
+    =@article.body
